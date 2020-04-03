@@ -55,13 +55,13 @@ public class Ex04_for중첩 {
 //			System.out.println();
 //		}
 //================================================================
-//		//문제 4
-//		for( int i=0; i<26; i++ ) {
-//			for( char ch='Z'; ch>='Z'-i; ch--) {
-//				System.out.print(ch);
-//			}
-//			System.out.println();
-//		}
+		//문제 4
+		for( int i=0; i<26; i++ ) {
+			for( char ch='Z'; ch>='Z'-i; ch--) {
+				System.out.print(ch);
+			}
+			System.out.println();
+		}
 //================================================================
 //		//문제 5
 //		for( int i=0; i<26; i++ ) {
@@ -74,15 +74,15 @@ public class Ex04_for중첩 {
 //			System.out.println();
 //		}
 //================================================================
-		for(int i=0; i<26; i++) {
-			for(int j=0; j<i; j++) {
-				System.out.print(" ");
-			}
-			for(char ch=(char)('A'+i); ch<='Z'; ch++) {
-				System.out.print(ch);
-			}
-			System.out.println();
-		}
+//		for(int i=0; i<26; i++) {
+//			for(int j=0; j<i; j++) {
+//				System.out.print(" ");
+//			}
+//			for(char ch=(char)('A'+i); ch<='Z'; ch++) {
+//				System.out.print(ch);
+//			}
+//			System.out.println();
+//		}
 //================================================================	
 	}
 }
