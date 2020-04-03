@@ -1,0 +1,38 @@
+### 상속관계
+
+[개발시]
+1. 부모클래스의 멤버를 그냥 사용하고 싶다.
+2. 부모클래스에 없는 경우 그냥 추가
+3. 부모클래스에 있는데 변경이 필요한 경우(overriding - 자신의 것을 가져옴)
+
+
+
+-------------------------------
+[설계시]
+- 공통요소를 부모클래스에
+- 고유요소를 자식클래스에
+- 
+============================================================================
+class  Parent {
+
+   public double method( ) {   return   36.7;    }
+
+}
+
+class Child extends Parent {
+
+   /*    여기      */
+
+}
+(1)public void method( ) {  double d =36.7;  };// overriding을 노렸으나 리턴형이 다르다.
+
+(2)public double method( double d ) { return d; }//인자형이 달라서 overloading
+
+(3)double method( double d ) { return d; }//인자형이 다르다 overloading
+
+(4)double method( )  { return 36.7;   }//public이 없어서 overriding 안됨
+
+
+
+
+답: 2, 3번
